@@ -1,13 +1,21 @@
 .character {
   height: 300px;
-  padding: 20px;
+  margin: 20px;
   display: flex;
+  background: rgb(60, 62, 68);
+  border-radius: 12px;
+  overflow: hidden;
 }
 
-.character img {
-  margin-right: 10px;
+.character .status {
+  margin-bottom: 20px;
 }
 
 .info {
+  padding-top: 20px;
+  padding-left: 15px;
+}
+
+.stat {
   text-transform: capitalize;
 }
