@@ -21,6 +21,12 @@
 
 .page-list > ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fit, 1fr);
   width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .page-list > ul {
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  }
 }

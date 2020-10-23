@@ -10,7 +10,7 @@ export function Character({ info }: { info: RnMCharacter }) {
   const { name, status, species, location, image, episode } = info;
   return (
     <div className="character">
-      <img src={image} alt={name} width="300px" height="300px"></img>
+      <img src={image} alt={name}></img>
       <div className="info">
         <h1>{name}</h1>
         <h4 className="stat stat-info">{status}</h4>
