@@ -1,0 +1,10 @@
+.page-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.page-info button:enabled {
+  cursor: pointer;
+}

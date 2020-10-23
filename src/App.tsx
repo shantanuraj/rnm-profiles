@@ -4,8 +4,8 @@ import "./styles.css";
 
 export default function App() {
   return (
-    <div>
-      <div>Rick & Morty Characters</div>
+    <div className="container">
+      <h1>Rick & Morty Characters</h1>
       <PagedList />
     </div>
   );

@@ -1,6 +1,10 @@
 import * as React from "react";
 import { Characters } from "../Characters";
 import { useCharacters } from "../data/characters";
+import { Back } from '../icons/Back';
+import { Next } from '../icons/Next';
+
+import './paged-list.css';
 
 export function PagedList() {
   const [page, setPage] = React.useState(1);
@@ -21,13 +25,13 @@ export function PagedList() {
 
   return (
     <>
-      <div>Page {page} of {info.pages}</div>
-      <div>
+      <div className="page-info">
         <button onClick={prevPage} disabled={!info.prev}>
-          Previous
+          <Back />
         </button>
+        <span>Page {page} of {info.pages}</span>
         <button onClick={nextPage} disabled={!info.next}>
-          Next
+          <Next />
         </button>
       </div>
       <Characters data={results} />
