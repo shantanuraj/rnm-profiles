@@ -1,5 +1,6 @@
 import * as React from "react";
 import { PagedList } from "./PagedList";
+import "normalize.css";
 import "./styles.css";
 
 export default function App() {

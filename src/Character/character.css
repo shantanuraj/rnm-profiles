@@ -1,0 +1,13 @@
+.character {
+  height: 300px;
+  padding: 20px;
+  display: flex;
+}
+
+.character img {
+  margin-right: 10px;
+}
+
+.info {
+  text-transform: capitalize;
+}
