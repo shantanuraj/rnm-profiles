@@ -8,3 +8,17 @@
 .page-info button:enabled {
   cursor: pointer;
 }
+
+.page-list {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  overflow: scroll;
+}
+
+.page-list ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+}
