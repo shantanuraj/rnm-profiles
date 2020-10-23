@@ -37,3 +37,15 @@ export type LocationResponse = {
   url:       string;
   created:   Date;
 }
+
+export type EpisodeInfo = {
+  id:         number;
+  name:       string;
+  air_date:   string;
+  episode:    string;
+  characters: string[];
+  url:        string;
+  created:    Date;
+}
+
+export type EpisodeResponse = Array<EpisodeInfo>
