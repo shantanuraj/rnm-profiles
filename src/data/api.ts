@@ -5,4 +5,4 @@ const api = axios.create({
 });
 
 export const fetcher = <T>(url: string, params: object = {}) =>
-  api.get(url, { params }).then((res) => res.data as T);
+  api.get<T>(url, { params }).then((res) => res.data);
