@@ -29,23 +29,23 @@ export type CharacterResponse = {
 };
 
 export type LocationResponse = {
-  id:        number;
-  name:      string;
-  type:      string;
+  id: number;
+  name: string;
+  type: string;
   dimension: string;
   residents: string[];
-  url:       string;
-  created:   Date;
-}
+  url: string;
+  created: Date;
+};
 
 export type EpisodeInfo = {
-  id:         number;
-  name:       string;
-  air_date:   string;
-  episode:    string;
+  id: number;
+  name: string;
+  air_date: string;
+  episode: string;
   characters: string[];
-  url:        string;
-  created:    Date;
-}
+  url: string;
+  created: Date;
+};
 
-export type EpisodeResponse = Array<EpisodeInfo>
+export type EpisodeResponse = Array<EpisodeInfo>;

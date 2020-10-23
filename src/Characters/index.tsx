@@ -2,7 +2,7 @@ import * as React from "react";
 import { Character } from "../Character";
 import { RnMCharacter } from "../types";
 
-import './characters.css'
+import "./characters.css";
 
 export function Characters({ data }: { data: RnMCharacter[] }) {
   return (

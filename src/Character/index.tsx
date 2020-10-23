@@ -2,9 +2,9 @@ import * as React from "react";
 import { RnMCharacter } from "../types";
 
 import "./character.css";
-import { Episodes } from './Episodes';
+import { Episodes } from "./Episodes";
 import { Location } from "./Location";
-import { Stat } from './Stat';
+import { Stat } from "./Stat";
 
 export function Character({ info }: { info: RnMCharacter }) {
   const { name, status, species, location, image, episode } = info;
@@ -16,19 +16,13 @@ export function Character({ info }: { info: RnMCharacter }) {
         <h4 className="stat stat-info">{status}</h4>
         <Stat left="Species" right={species} />
         <React.Suspense
-          fallback={
-            <Stat left="Location" right={location.name} />
-          }
+          fallback={<Stat left="Location" right={location.name} />}
         >
           <Location data={location} />
         </React.Suspense>
 
         <React.Suspense
-          fallback={
-            <h4>
-              Appears in {episode.length} episodes
-            </h4>
-          }
+          fallback={<h4>Appears in {episode.length} episodes</h4>}
         >
           <Episodes data={episode} />
         </React.Suspense>
