@@ -4,10 +4,12 @@ import { RnMCharacter } from "../types";
 
 export function Characters({ data }: { data: RnMCharacter[] }) {
   return (
-    <>
+    <ul>
       {data.map((character) => (
-        <Character key={character.id} info={character} />
+        <li key={character.id}>
+          <Character info={character} />
+        </li>
       ))}
-    </>
+    </ul>
   );
 }

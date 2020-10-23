@@ -21,8 +21,7 @@ export function PagedList() {
 
   return (
     <>
-      <div>Page {page}</div>
-      <Characters data={results} />
+      <div>Page {page} of {info.pages}</div>
       <div>
         <button onClick={prevPage} disabled={!info.prev}>
           Previous
@@ -31,6 +30,7 @@ export function PagedList() {
           Next
         </button>
       </div>
+      <Characters data={results} />
     </>
   );
 }
