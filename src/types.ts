@@ -22,8 +22,8 @@ export type CharacterResponse = {
   info: {
     count: number;
     pages: number;
-    next: string;
-    prev: null;
+    next: string | null;
+    prev: string | null;
   };
   results: Array<RnMCharacter>;
 };
